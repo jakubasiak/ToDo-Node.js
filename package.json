@@ -1,0 +1,23 @@
+{
+  "name": "node_to_do_app",
+  "version": "1.0.0",
+  "description": "ToDo App",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "todo"
+  ],
+  "author": "kuabkubasiak@o2.pl",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.1",
+    "bootstrap": "^4.0.0-alpha.6",
+    "ejs": "^2.5.7",
+    "express": "^4.15.4",
+    "jquery": "^3.2.1",
+    "mongoose": "^4.11.11",
+    "tether": "^1.4.0"
+  }
+}

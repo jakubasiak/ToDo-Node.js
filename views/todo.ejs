@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../bootstrap.css" type="text/css" />
+    <style>
+        .marg {
+            margin: 1em;
+        }
+
+        body {
+            background-color: lightblue
+        }
+
+        .list-panel {
+            margin: auto;
+            width: 100%;
+        }
+
+        li {
+            margin-top: 1em;
+        }
+
+        li:hover {
+            text-decoration: line-through !important;
+        }
+
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container marg">
+        <div id="todoTable" class="row">
+            <div class="panel panel-default col-sm-12">
+                <form action="" method="post" class="">
+                    <div class="form-group row">
+                        <input id="inp" type="text" name="item" placeholder="Add new item..." class="form-control col-sm-9" required />
+                        <button type="submit" class="btn btn-info form-control col-sm-3">Add Item</button>
+                    </div>
+                </form>
+            </div>
+            <div class="panel panel-default list-panel">
+                <ul class="list-group">
+                    <% for(var i=0;i < todos.length; i++){ %>
+                        <li class="list-group-item">
+                            <%= todos[i].item %>
+                        </li>
+                        <% } %>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src='../jquery.js'></script>
+    <script src='tether.js'></script>
+    <script src='../bootstrap.js'></script>
+    <script src='../todo-list.js'></script>
+</body>
+
+</html>
